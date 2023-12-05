@@ -27,6 +27,6 @@ for(link of menuLinks) {
   let a = document.createElement('a')
   // a.href = link.href
   // a.textContent = link.text
-  a.innerHTML = `<a href = '${link.href}.html' target="_blank">${link.text}</a>`
+  a.innerHTML = `<a href = '/links/${link.href}.html' target="_blank">${link.text}</a>`
   topMenuEl.appendChild(a)
 }
