@@ -1,6 +1,6 @@
 // Menu data structure
 var menuLinks = [
-  {text: 'about', href: '/about.html'},
+  {text: 'about', href: '/about'},
   {text: 'catalog', href: '/catalog'},
   {text: 'orders', href: '/orders'},
   {text: 'account', href: '/account'},
@@ -27,6 +27,6 @@ for(link of menuLinks) {
   let a = document.createElement('a')
   // a.href = link.href
   // a.textContent = link.text
-  a.innerHTML = `<a href = '${link.href}'>${link.text}</a>`
+  a.innerHTML = `<a href = '${link.href}.html' target="_blank">${link.text}</a>`
   topMenuEl.appendChild(a)
 }
